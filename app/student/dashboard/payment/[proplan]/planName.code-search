@@ -1,0 +1,18 @@
+# Query: planSlug
+# ContextLines: 1
+
+4 results - 1 file
+
+student-dashboard\app\student\dashboard\checkout\[planName
+]\page.jsx:
+   6    const router = useRouter();
+   7:   const { planSlug } = params; // matches folder name [planSlug]
+   8  
+
+  11      const subscriptionData = {
+  12:       name: planSlug,
+  13        status: "Active",
+
+  41        <div className="bg-gray-800 p-8 rounded-xl text-center">
+  42:         <h1 className="text-2xl mb-4">Checkout: {planSlug}</h1>
+  43          <p className="mb-4">Select a payment method (simulated)</p>
