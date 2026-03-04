@@ -1,0 +1,164 @@
+/* SubjectDetail.css */
+.subject-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-5px);
+}
+
+.subject-header {
+  padding-left: 20px;
+  border-left: 4px solid;
+  margin-bottom: 30px;
+}
+
+.subject-header h1 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.subject-meta {
+  display: flex;
+  gap: 20px;
+  color: #666;
+}
+
+.grade-badge {
+  background: #e5e7eb;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.subject-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subject-description h2,
+.subject-progress h2,
+.subject-lessons h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.subject-description p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-weight: 500;
+  color: #666;
+}
+
+.lessons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lessons-list li {
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lessons-list .upcoming-lesson {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.upcoming-badge {
+  background: #3b82f6;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.subject-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.start-lesson-btn,
+.view-resources-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.start-lesson-btn {
+  color: white;
+}
+
+.start-lesson-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.view-resources-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.view-resources-btn:hover {
+  background: #e5e7eb;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 18px;
+  color: #666;
+}

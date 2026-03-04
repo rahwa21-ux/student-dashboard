@@ -1,0 +1,99 @@
+/* components/SubjectProgress.css */
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subject-item {
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.subject-item:hover {
+  border-color: var(--gray-300);
+}
+
+.subject-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.subject-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.subject-info {
+  flex: 1;
+}
+
+.subject-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--gray-900);
+}
+.subject-icon svg {
+  font-size: 22px;
+}
+
+.subject-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--gray-700);
+}
+
+.progress-section {
+  margin-top: 16px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--gray-700);
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.upcoming-lesson {
+  font-size: 13px;
+  color: var(--gray-600);
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .subject-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .subject-header .btn {
+    align-self: flex-start;
+  }
+}

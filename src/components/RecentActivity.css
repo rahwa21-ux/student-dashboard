@@ -1,0 +1,70 @@
+/* components/RecentActivity.css */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.activity-card {
+  margin-top: 30px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.activity-item:hover {
+  background-color: var(--gray-50);
+}
+
+.activity-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-text {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.activity-action {
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.activity-item-name {
+  color: var(--gray-700);
+}
+
+.activity-time {
+  font-size: 13px;
+  color: var(--gray-600);
+}
+
+.activity-chevron {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.activity-chevron:hover {
+  color: var(--primary-green);
+}

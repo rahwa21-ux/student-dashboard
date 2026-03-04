@@ -1,0 +1,103 @@
+/* components/DailyStudyGoal.css */
+.study-goal-card {
+  margin-top: 40px;
+}
+
+.goal-progress {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.progress-circle {
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.progress-percent {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.goal-details {
+  flex: 1;
+}
+
+.time-info {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.time-spent,
+.time-goal {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.time-label {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.task-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.task-label {
+  font-size: 14px;
+  color: var(--gray-700);
+}
+
+.task-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+@media (max-width: 768px) {
+  .goal-progress {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .time-info {
+    justify-content: space-around;
+  }
+}
+/*adding animation*/
