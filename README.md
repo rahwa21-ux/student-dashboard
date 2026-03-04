@@ -1,32 +1,11 @@
-# Student Dashboard (React + Vite)
+# Student Dashboard (Next.js)
 
-This project is a student dashboard built using React and Vite.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 Install dependencies:
 
+```bash
 npm install
-
-Run development server:
-
-npm run dev
-
-Build for production:
-
-npm run build
-
-Preview production build:
-
-npm run preview
-
-## Tech Stack
-
-- React
-- Vite
-- React Router
-- ESLint
-
-## Deployment
-
-This project can be deployed easily on Vercel or any static hosting platform.
+```
